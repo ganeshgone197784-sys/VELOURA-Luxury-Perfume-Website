@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELOURA — Where Every Drop Becomes a Memory</title>
+<meta name="description" content="VELOURA — luxury perfume house. Discover the art of luxury fragrance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div id="loader">
+  <div class="loader-mark">VELOURA</div>
+  <div class="loader-line"></div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<header id="siteHeader">
+  <a href="#top" class="logo">VE<span>LOU</span>RA</a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="#about">Maison</a>
+    <a href="#collection">Collection</a>
+    <a href="#bestsellers">Bestsellers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="searchOpenBtn" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <button class="icon-btn" id="wishNavBtn" aria-label="Wishlist">
+      <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+      <span class="badge" id="wishCount">0</span>
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode"><div class="knob"></div></button>
+    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchCloseBtn">Close ✕</button>
+  <div class="search-box">
+    <input type="text" placeholder="Search fragrances, notes, collections…" id="searchInput" autocomplete="off">
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="m-close" id="mobileCloseBtn">Close ✕</button>
+  <a href="#about">Maison</a>
+  <a href="#collection">Collection</a>
+  <a href="#bestsellers">Bestsellers</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Luxury black and gold VELOURA perfume bottle in soft studio light"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-inner">
+    <div class="hero-bottle bottle mv" aria-hidden="true">
+      <div class="cap"></div><div class="neck"></div>
+      <div class="body"><div class="shine"></div></div>
+    </div>
+    <h1>Discover the Art of<br><em>Luxury Fragrance</em></h1>
+    <p class="sub">VELOURA crafts rare, uncompromising scents from the world's most coveted ingredients — each bottle a quiet ritual, each drop a memory kept.</p>
+    <div class="hero-ctas">
+      <a href="#collection" class="btn primary"><span>Explore Collection</span></a>
+      <a href="#about" class="btn ghost"><span>Discover the Story</span></a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span class="eyebrow" style="letter-spacing:.28em;">Scroll</span><div class="line"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal-zoom">
+      <div class="photo-frame tone-ro" style="aspect-ratio:4/5;">
+        <img src="https://images.pexels.com/photos/32566124/pexels-photo-32566124.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant amber-toned perfume bottle in soft studio light, representing the VELOURA atelier" loading="lazy">
+        <div class="shine"></div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">The Maison</span>
+      <h2>Three generations of <span class="serif-italic">perfumers</span>, one obsession with beauty.</h2>
+      <p>VELOURA began in a small atelier where a single rule still governs every formula: nothing enters a bottle unless it is worth remembering. Our perfumers travel to source absolutes and resins at their origin — Bulgarian rose fields at dawn, oud forests of Assam, orange groves along the Mediterranean coast.</p>
+      <p>Each fragrance is macerated for months, never rushed, and finished by hand in crystal glass. The result is a wardrobe of scents built not for the moment, but for the memory it becomes.</p>
+      <div class="about-stats-inline">
+        <div><strong>1998</strong><span>Founded</span></div>
+        <div><strong>6</strong><span>Master Perfumers</span></div>
+        <div><strong>100%</strong><span>Hand Finished</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="section-alt" id="collection">
+  <div class="section-head reveal">
+    <span class="eyebrow">Featured Collection</span>
+    <h2>Six Scents, <span class="serif-italic">Six Stories</span></h2>
+    <div class="divider"></div>
+    <p>Every bottle is designed as a vessel for its scent — its colour, weight, and light chosen to match the story inside.</p>
+  </div>
+  <div class="grid-cards" id="collectionGrid"></div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="why">
+  <div class="section-head reveal">
+    <span class="eyebrow">Why VELOURA</span>
+    <h2>Crafted Without <span class="serif-italic">Compromise</span></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="features-grid" id="featuresGrid"></div>
+</section>
+
+<!-- BESTSELLERS -->
+<section class="section-alt" id="bestsellers">
+  <div class="section-head reveal">
+    <span class="eyebrow">Most Coveted</span>
+    <h2>Bestsellers</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="bestseller-scroll" id="bestsellerScroll"></div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-head reveal">
+    <span class="eyebrow">In Their Words</span>
+    <h2>Customer Reviews</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="testi-wrap" id="testiWrap"></div>
+  <div class="testi-dots" id="testiDots"></div>
+</section>
+
+<!-- STATS -->
+<section class="section-alt">
+  <div class="stats-grid" id="statsGrid">
+    <div class="stat reveal"><h3 data-target="48000">0</h3><span>Happy Customers</span></div>
+    <div class="stat reveal"><h3 data-target="32">0</h3><span>Luxury Fragrances</span></div>
+    <div class="stat reveal"><h3 data-target="54">0</h3><span>Countries Served</span></div>
+    <div class="stat reveal"><h3 data-target="120">0</h3><span>Premium Ingredients</span></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-head reveal">
+    <span class="eyebrow">Atelier</span>
+    <h2>Gallery</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="masonry" id="galleryGrid"></div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <span class="eyebrow" style="color:var(--gold-soft);">Stay In Scent</span>
+  <h2>Join the VELOURA Circle</h2>
+  <p>Early access to new fragrances, atelier stories, and members-only pricing — delivered rarely, and always worth opening.</p>
+  <form class="news-form" id="newsForm">
+    <input type="email" placeholder="Your email address" required id="newsEmail">
+    <button type="submit">Subscribe</button>
+  </form>
+  <div class="news-msg" id="newsMsg"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-head reveal">
+    <span class="eyebrow">Reach Us</span>
+    <h2>Contact</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="contact-grid">
+    <form class="contact-form reveal" id="contactForm">
+      <label for="cName">Name</label>
+      <input type="text" id="cName" required placeholder="Your full name">
+      <label for="cEmail">Email</label>
+      <input type="email" id="cEmail" required placeholder="you@example.com">
+      <label for="cMsg">Message</label>
+      <textarea id="cMsg" required placeholder="Tell us how we can help…"></textarea>
+      <button class="btn dark" type="submit"><span>Send Message</span></button>
+      <div class="news-msg" id="contactMsg"></div>
+    </form>
+    <div class="reveal">
+      <div class="contact-info-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="1"/></svg></div>
+        <div><h4>Email</h4><p>concierge@veloura.com</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2z"/></svg></div>
+        <div><h4>Phone</h4><p>+1 (415) 555‑0192</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h4>Atelier</h4><p>212 Rue de Fleur, San Francisco, CA</p></div>
+      </div>
+      <div class="map-frame"><div class="pin"></div></div>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.95.01 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 6.8a3.2 3.2 0 0 1 0 6.4zm6.4-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-9h3l.5-3.5H13V7.3c0-1 .3-1.7 1.8-1.7H17V2.2C16.6 2.1 15.4 2 14 2c-2.9 0-4.9 1.8-4.9 5v2.5H6V13h3.1v9H13z"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.6 19.3c0-.8 0-1.8.2-2.6l1.4-6s-.3-.7-.3-1.7c0-1.6 1-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-1 3.9-.3 1.1.6 2 1.7 2 2 0 3.5-2.1 3.5-5.2 0-2.7-1.9-4.6-4.7-4.6-3.2 0-5.1 2.4-5.1 4.9 0 1 .4 2 .8 2.6.1.1.1.2.1.3l-.3 1.3c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.4-5.4 6.4-1.1 0-2.1-.6-2.4-1.2l-.7 2.5c-.2 1-.9 2.2-1.3 3A10 10 0 1 0 12 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">VE<span>LOU</span>RA</a>
+      <p>Where every drop becomes a memory. Rare fragrances, hand finished in small batches for those who notice the details.</p>
+    </div>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#about">Maison</a></li>
+        <li><a href="#bestsellers">Bestsellers</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Collections</h5>
+      <ul id="footerCollections"></ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>concierge@veloura.com</li>
+        <li>+1 (415) 555‑0192</li>
+        <li>212 Rue de Fleur, San Francisco, CA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> VELOURA. All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
