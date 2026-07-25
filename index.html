@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELOURA — The Art of Scent</title>
+<meta name="description" content="VELOURA — a house of luxury perfumes. Handcrafted fragrances, long-lasting, cruelty-free, premium ingredients.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pre-line"></div>
+  <div class="pre-logo">VELOURA</div>
+</div>
+
+<!-- Navbar -->
+<header id="siteHeader">
+  <a href="#hero" class="logo">VEL<span>O</span>URA</a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="#story">Maison</a>
+    <a href="#collection">Collection</a>
+    <a href="#why">Why Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Visit</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+      Cart
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </nav>
+  <button class="cart-btn" id="cartBtnMobile" aria-label="Open cart" style="display:none;">
+    Cart<span class="cart-count" id="cartCountMobile">0</span>
+  </button>
+  <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div id="scrim"></div>
+<nav id="mobileDrawer" aria-label="Mobile">
+  <button id="drawerClose" aria-label="Close menu">&times;</button>
+  <a href="#story">Maison</a>
+  <a href="#collection">Collection</a>
+  <a href="#why">Why Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Visit</a>
+</nav>
+
+<!-- Cart Drawer -->
+<div id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3 class="serif">Your Selection</h3>
+    <button id="cartCloseBtn" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Your cart is empty. Discover the collection below.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">₹0</strong>
+    </div>
+    <button class="checkout-btn whatsapp" id="checkoutWhatsapp">Order via WhatsApp</button>
+    <button class="checkout-btn email" id="checkoutEmail">Order via Email</button>
+    <p class="cart-note">Orders are sent directly to our team — payment and delivery details are confirmed by reply. Update the WhatsApp number and email address placeholders in the code before launch.</p>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <canvas id="particles"></canvas>
+
+  <div class="hero-content">
+    <span class="eyebrow">Maison de Parfum &middot; Est. Kalyan</span>
+    <h1 class="serif">VELOURA — The <em>Art</em> of Scent</h1>
+    <p class="sub">Rare accords, hand-blended in small batches. Each bottle of VELOURA is a quiet act of luxury — worn, not worn, remembered.</p>
+    <div class="cta-row">
+      <a href="#collection" class="btn-gold">Discover the Collection</a>
+      <a href="#contact" class="btn-outline">Visit the Atelier</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span class="eyebrow" style="letter-spacing:.3em;">Scroll</span>
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- Brand Story -->
+<section class="story" id="story">
+  <div class="story-inner reveal">
+    <span class="eyebrow">The Maison</span>
+    <h2 class="serif" style="margin:.8rem 0 1.6rem;font-size:clamp(1.8rem,3.6vw,2.6rem);">A House Built on Restraint</h2>
+    <p>VELOURA was founded on a simple belief: that true luxury whispers. Far from the noise of mass fragrance, our perfumers work in small batches from an atelier in Kalyan, sourcing rare absolutes and aging every accord until it speaks with clarity. No shortcuts, no synthetics standing in for substance — only scent, considered as an art form.</p>
+    <p class="signature">— The House of VELOURA</p>
+  </div>
+</section>
+
+<!-- Signature Collection -->
+<section class="collection" id="collection">
+  <div class="section-head reveal">
+    <span class="eyebrow">Signature Collection</span>
+    <h2 class="serif">Six Facets of VELOURA</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="grid-collection reveal-stagger" id="collectionGrid">
+    <!-- 12 product cards rendered by JS from the PRODUCTS array below -->
+  </div>
+</section>
+
+<!-- Why Veloura -->
+<section class="why" id="why">
+  <div class="section-head reveal">
+    <span class="eyebrow">Why VELOURA</span>
+    <h2 class="serif">Crafted Without Compromise</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="why-grid reveal-stagger">
+    <div class="why-item">
+      <div class="why-icon">⏳</div>
+      <h3 class="serif">Long-Lasting</h3>
+      <p>12+ hours of wear from a single application, built on high-concentration extraits.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">✿</div>
+      <h3 class="serif">Cruelty-Free</h3>
+      <p>Never tested on animals, at any stage of formulation or production.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">◆</div>
+      <h3 class="serif">Premium Ingredients</h3>
+      <p>Rare absolutes and naturals sourced directly from growers we trust.</p>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">✎</div>
+      <h3 class="serif">Handcrafted</h3>
+      <p>Every batch blended and aged by hand in our Kalyan atelier.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof -->
+<section class="proof" id="proof">
+  <div class="proof-badge reveal">
+    <div class="stars" aria-hidden="true">★★★★★</div>
+    <div class="counter" id="counter" data-target="222586">0</div>
+    <div class="label">5.0 Average &middot; Verified Customer Reviews</div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <span class="eyebrow">The Gallery</span>
+    <h2 class="serif">Moments in VELOURA</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="masonry reveal" id="galleryGrid"></div>
+  <p style="text-align:center;margin-top:2rem;font-size:.78rem;letter-spacing:.1em;color:rgba(245,237,224,.5);">
+    Follow <span style="color:var(--gold);">@veloura.parfums</span> — placeholder Instagram grid, swap with real imagery.
+  </p>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head reveal">
+    <span class="eyebrow">In Their Words</span>
+    <h2 class="serif">Loved by Our Clientele</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="t-track" id="tTrack">
+    <div class="t-slide active">
+      <p class="quote">"Noir Velours doesn't just smell expensive — it feels like it was made for me alone. Compliments every single time."</p>
+      <p class="who">— Aditi R.</p>
+    </div>
+    <div class="t-slide">
+      <p class="quote">"The longevity is unreal. I spray in the morning and can still catch it on my scarf at night."</p>
+      <p class="who">— Karan M.</p>
+    </div>
+    <div class="t-slide">
+      <p class="quote">"Rose Écarlate is the most sophisticated rose I've worn — sharp, warm, never sweet."</p>
+      <p class="who">— Neha S.</p>
+    </div>
+    <div class="t-slide">
+      <p class="quote">"Packaging, scent, service — every detail feels considered. This is what luxury should feel like."</p>
+      <p class="who">— Farhan A.</p>
+    </div>
+  </div>
+  <div class="t-dots" id="tDots"></div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="section-head reveal">
+    <span class="eyebrow">Visit Us</span>
+    <h2 class="serif">The Atelier</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="contact-grid reveal">
+    <div class="info-block">
+      <div class="info-row">
+        <span class="k">Address</span>
+        <span class="v">Gandhare Village, Khadakpada,<br>Kalyan, Maharashtra 421301</span>
+      </div>
+      <div class="info-row">
+        <span class="k">Phone</span>
+        <span class="v">[Phone Number Placeholder]</span>
+      </div>
+      <div class="info-row">
+        <span class="k">Email</span>
+        <span class="v">[email@veloura.com Placeholder]</span>
+      </div>
+      <div class="info-row">
+        <span class="k">Instagram</span>
+        <span class="v">[@veloura Instagram Placeholder]</span>
+      </div>
+      <div class="info-row">
+        <span class="k">WhatsApp</span>
+        <span class="v">[WhatsApp Link Placeholder]</span>
+      </div>
+
+      <div class="map-embed" role="img" aria-label="Map placeholder for VELOURA atelier address">
+        <span>Google Maps Embed Placeholder</span>
+        <span style="opacity:.7;">Gandhare Village, Khadakpada, Kalyan</span>
+      </div>
+    </div>
+
+    <form id="contactForm" onsubmit="return false;">
+      <div class="field">
+        <input type="text" name="name" placeholder="Full Name" required>
+      </div>
+      <div class="field">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="field">
+        <input type="tel" name="phone" placeholder="Phone Number">
+      </div>
+      <div class="field">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-gold send-btn">Send Enquiry</button>
+      <p style="font-size:.7rem;color:rgba(245,237,224,.4);margin-top:.4rem;">
+        Form is not yet connected to a backend — wire up an endpoint to receive submissions.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col" style="max-width:260px;">
+      <div class="footer-logo">VELOURA</div>
+      <p style="font-size:.8rem;color:rgba(245,237,224,.55);margin-top:1rem;line-height:1.7;">
+        Handcrafted luxury perfumes from our atelier in Kalyan, Maharashtra.
+      </p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+        <a href="#" aria-label="Email">@</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#story">Maison</a>
+      <a href="#collection">Collection</a>
+      <a href="#why">Why VELOURA</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#contact">Contact Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#">Shipping (Placeholder)</a>
+      <a href="#">Returns (Placeholder)</a>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p style="font-size:.85rem;color:rgba(245,237,224,.6);line-height:1.7;">
+        Gandhare Village, Khadakpada,<br>Kalyan, Maharashtra 421301
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="year"></span> VELOURA. All rights reserved.</span>
+    <span>Designed for a house of scent.</span>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div id="stickyCta"><a href="#contact">Contact Us</a></div>
+
+<script src="script.js"></script>
+</body>
+</html>
